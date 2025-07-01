@@ -1,0 +1,77 @@
+.glasses-container {
+  background-image: url("/glassesImage/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.model-box {
+  display: flex;
+  justify-content: center;
+}
+
+.model-image {
+  position: relative;
+  display: inline-block;
+}
+
+.face {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.glass-on-face {
+  position: absolute;
+  top: 65px;
+  left: 60px;
+  width: 130px;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.glass-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+  text-align: left;
+}
+
+.glasses-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.glass-thumb {
+  width: 80px;
+  height: 35px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: white;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.glass-thumb.active {
+  border: 2px solid orange;
+  box-shadow: 0 0 6px orange;
+}
